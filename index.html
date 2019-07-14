@@ -4,36 +4,65 @@
         <title>
             Meu teste Roger
         </title>
-        <link rel="stylesheet" href="css/site.css"/>
+        <link rel="stylesheet" href="./css/style.css"/>
+        <!--        
         <script type="text/javascript">
             alert("hello javascript");
         </script>
+        -->
     </head>
     <body>
-        <header>
-            <div><img src="img/logo.jpg"/></div>
-            <div>Este é um site de teste do Roger</div>
-            <nav>
-                <ul>
-                    <li><a href="/index.html">Inicio</a></li>
-                    <li><a href="/contact.html">Contato</a></li>
-                    <li><a href="/about.html">Sobre</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <p>Este é um site de exemplo aprendendo HTML5 CSS e Javascript</p>
-            <form action="http://wilder.azurewebsites.net/echo" method="POST">
-            <label for="searchPhrase">Pesquisar palavra:</label>
-            <input
-            </form>
-            <div id="results" class="bordered-image">
-                É aqui que os resultados ganham vida...
-            </div>
-        </section>
-        <footer>
-            &copy; 2019 Roger Bif
-        </footer>
-        <script type="text/javascript" src="js/index.js" ></script>
+        <div class="container">
+            <header>
+                <div id="blockedinline">
+                    <h2><img src="img/dog.jpeg" class="borderedimage"/></h2>
+                </div>
+                <div id="blockedinline">
+                    <div id="blockedinline">
+                        <h1>Teste HTML</h1>
+                    </div>
+                    <div id="blockedinline">
+                        <nav>
+                            <ul>
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./about.html">About</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <section id="main">
+                <p>Este é um site de exemplo aprendendo HTML5 CSS e Javascript</p>
+                <form >
+                <br>
+                <label for="searchPhrase">Localizar Arquivo para analise: </label>
+                <br>
+                <input type="file" id="fileInput">
+                </form>
+                <br>
+                <div id="fileDisplayArea" class="bordered-image">
+                    É aqui que os resultados ganham vida...
+                </div>
+                <br>
+                <p id="demo0"></p>
+                <br>
+                <p id="demo1"></p>
+                <br>
+                <p id="demo2"></p>
+                <br>
+                <p id="demo3"></p>
+                <br>
+                <p id="demo4"></p>
+                <br>
+                <p id="demo5"></p>
+                <br>
+                <p id="demo6"></p>
+            </section>
+            <footer>
+                &copy; 2019 Roger Bif
+            </footer>
+            <script type="text/javascript" src="js/index.js" ></script>
+        </div>
     </body>
 </html>

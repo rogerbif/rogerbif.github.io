@@ -1,0 +1,53 @@
+/*Arquivo de estilos em cascata*/
+header{
+    background-color: lightgoldenrodyellow;
+    border: solid 1px black;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+footer{
+    background-color: lightgoldenrodyellow;
+    border: solid 1px black;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#main{
+    background-color: rgb(139, 255, 110);
+    border: solid 1px black;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+}
+#main label,
+#main input,
+#main select{
+    /*width: 100px;*/
+}
+#main input[type=submit]{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border-radius: 15px;
+    margin-top: 5px;
+    box-shadow: 3px green;
+}
+.borderedimage{
+    width: 150px;
+    height: 100px;
+    border-radius: 50px;
+}
+.container{
+    width: 989px;
+    margin: 0 auto;
+}
+#blockedinline{
+    display: inline-block;
+    vertical-align: top;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>Meu teste HTML</title>
+        <link rel="stylesheet" href="./css/style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Teste HTML</h1>
+                <h2><img src="img/dog.jpeg" class="borderedimage"/></h2>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="main">
+                <form action="https://google.com/echo" method="POST">
+                    <label for="searchphrase">Search: </label>
+                    <input name="searchphrase" id="searchphrase" value="pesquise aqui..."/><br/>
+                    <label for="useStars"> Use Stars? </label>
+                    <input type="checkbox" name="useStars" id="useStars" checked="true" /> <br/>
+                    <label for="langchoise">Lang: </label>
+                    <select name="langchoise" id="langchoise">
+                        <option selected>All</option>
+                        <option>C#</option>
+                        <option>JS</option>
+                        <option>TS</option>
+                        <option>Py</option>
+                    </select> <br/>
+                    <input type="submit" value="search"/>
+                </form>
+            </section>  
+            <footer>
+                &copy; 2019 Roger Bif
+            </footer>
+        </div>
+    </body>
+</html>
