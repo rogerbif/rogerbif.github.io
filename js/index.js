@@ -1,5 +1,11 @@
 var fileInput = document.getElementById('fileInput');
 var fileDisplayArea = document.getElementById('fileDisplayArea');
+var Texto = document.getElementById('Texto');
+
+var Checkbox = document.getElementById('Checkbox');
+var ProcuraArquivo = document.getElementById('ProcuraArquivo');
+var AnalisaTexto = document.getElementById('AnalisaTexto');
+
 var t0,t1;
 
 fileInput.addEventListener('change', function(e) {
@@ -21,6 +27,37 @@ fileInput.addEventListener('change', function(e) {
         fileDisplayArea.innerText = "File not supported!"
     }
 });
+
+ProcuraArquivo.style.visibility = "hidden";
+Checkbox.onchange = function () {
+  if (Checkbox.checked) {
+    slideUp('AnalisaTexto');
+    slideDown('ProcuraArquivo','70px');
+  } else {  
+    slideUp('ProcuraArquivo');
+    slideDown('AnalisaTexto','200px');
+  }
+};
+
+function slideUp(el) {
+    var elem = document.getElementById(el);
+    elem.style.visibility = "hidden";
+    elem.style.transition = "all 1s ease-in-out";
+    elem.style.height = "0px";
+}
+
+function slideDown(el,alt) {
+    var elem = document.getElementById(el);
+    elem.style.visibility = "visible";
+    elem.style.transition = "all 1s ease-in-out";
+    elem.style.height = alt;
+}
+
+function analisa(){
+    //dispara o contador de tempo
+    t0 = performance.now();
+    Gerenciador(Texto);
+}
 
 function Gerenciador (contentInicial){
 
@@ -52,7 +89,8 @@ function Gerenciador (contentInicial){
     document.getElementById("demo7").innerHTML = "onlyUnique: "  + '<br>' + content3;
 
     var contentFinal2 = percorreLista(contentInicial, content3);
-    document.getElementById("demo10").innerHTML = "percorreLista2: " + contentFinal2; 
+    document.getElementById("demo10").innerHTML = ""; 
+    document.getElementById("demo10").innerHTML = "percorreLista: " + contentFinal2; 
     
     //Finaliza a contagem de tempo
     t1 = performance.now();

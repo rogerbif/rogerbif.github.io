@@ -5,11 +5,6 @@
             Meu teste Roger
         </title>
         <link rel="stylesheet" href="./css/style.css"/>
-        <!--        
-        <script type="text/javascript">
-            alert("hello javascript");
-        </script>
-        -->
     </head>
     <body>
         <div class="container">
@@ -34,13 +29,26 @@
             </header>
             <section id="main">
                 <p>Este é um site de exemplo aprendendo HTML5 CSS e Javascript</p>
-                <button onclick="start()">Start</button>
-                <button onclick="end()">End</button>
                 <form >
+                    <div class="center">
+                        <!-- Rounded switch -->
+                        <label class="switch">
+                            <input type="checkbox" id="Checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 <br>
-                <label for="searchPhrase">Localizar Arquivo para analise: </label>
+                    <div id="ProcuraArquivo">
+                        <label for="fileInput">Localizar Arquivo para analise: </label><br>
+                        <input type="file" id="fileInput"><br>
+                    </div>
                 <br>
-                <input type="file" id="fileInput">
+                    <div id="AnalisaTexto">
+                        <label for="Texto">Digite o texto para analise: </label><br>
+                        <!--<input name="Texto" type="textarea" id="Texto"/>-->
+                        ​<textarea id="Texto" rows="10" cols="70"></textarea><br>
+                        <input type="button" value="Analisar" onclick="analisa()">
+                    </div>
                 </form>
                 <br>
                 <div id="fileDisplayArea" class="bordered-image">
