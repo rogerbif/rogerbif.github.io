@@ -9,14 +9,8 @@
     <body>
         <div class="container">
             <header>
-                <div id="blockedinline">
-                    <h2><img src="img/dog.jpeg" class="borderedimage"/></h2>
-                </div>
-                <div id="blockedinline">
-                    <div id="blockedinline">
-                        <h1>Teste HTML</h1>
-                    </div>
-                    <div id="blockedinline">
+            <div class="cont">
+                    <div class="div1">
                         <nav>
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
@@ -24,6 +18,12 @@
                                 <li><a href="./about.html">About</a></li>
                             </ul>
                         </nav>
+                    </div>
+                    <div class="div2">
+                        <h2><img src="img/shil.webp" class="borderedimage"/></h2>
+                    </div>
+                    <div class="div3">
+                        <h1>Teste HTML</h1>
                     </div>
                 </div>
             </header>
@@ -38,17 +38,22 @@
                         </label>
                     </div>
                 <br>
-                    <div id="ProcuraArquivo">
-                        <label for="fileInput">Localizar Arquivo para analise: </label><br>
-                        <input type="file" id="fileInput"><br>
+                <div class="block">
+                    <div class="one">
+                        <div id="AnalisaTexto">
+                            <label for="Texto">Digite o texto para analise: </label><br>
+                            <!--<input name="Texto" type="textarea" id="Texto"/>-->
+                            ​<textarea id="Texto" rows="10" cols="60"></textarea><br>
+                            <input type="button" class="button buttonBlue" value="Analisar" onclick="analisa(Texto.value)">
+                        </div>   
                     </div>
-                <br>
-                    <div id="AnalisaTexto">
-                        <label for="Texto">Digite o texto para analise: </label><br>
-                        <!--<input name="Texto" type="textarea" id="Texto"/>-->
-                        ​<textarea id="Texto" rows="10" cols="70"></textarea><br>
-                        <input type="button" value="Analisar" onclick="analisa()">
+                    <div class="two">
+                        <div id="ProcuraArquivo" style="visibility: hidden">
+                            <label for="fileInput" class="button buttonBlue">Localizar Arquivo para analise: </label><br>
+                            <input type="file" id="fileInput" style="visibility: hidden"><br>
+                        </div>                     
                     </div>
+                </div>
                 </form>
                 <br>
                 <div id="fileDisplayArea" class="bordered-image">
@@ -66,6 +71,9 @@
                 <p id="demo9"></p>
                 <p id="demo10"></p>
                 <p id="demo11"></p>
+                <div class="center">
+                        <a class="button buttonBlue" href="./index.html">Limpar</a>
+                </div>
             </section>
             <footer>
                 &copy; 2019 Roger Bif

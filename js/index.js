@@ -31,29 +31,29 @@ fileInput.addEventListener('change', function(e) {
 ProcuraArquivo.style.visibility = "hidden";
 Checkbox.onchange = function () {
   if (Checkbox.checked) {
-    slideUp('AnalisaTexto');
-    slideDown('ProcuraArquivo','70px');
+    hidden('AnalisaTexto');
+    visible('ProcuraArquivo');
   } else {  
-    slideUp('ProcuraArquivo');
-    slideDown('AnalisaTexto','200px');
+    hidden('ProcuraArquivo');
+    visible('AnalisaTexto');
   }
 };
 
-function slideUp(el) {
+function hidden(el) {
     var elem = document.getElementById(el);
     elem.style.visibility = "hidden";
-    elem.style.transition = "all 1s ease-in-out";
-    elem.style.height = "0px";
+    elem.style.opacity = "0";
+    elem.style.transition = "visibility 0s 0.5s, opacity 2s linear";
 }
 
-function slideDown(el,alt) {
+function visible(el) {
     var elem = document.getElementById(el);
     elem.style.visibility = "visible";
-    elem.style.transition = "all 1s ease-in-out";
-    elem.style.height = alt;
+    elem.style.opacity = "1";
+    elem.style.transition = "opacity 0.5s linear";
 }
 
-function analisa(){
+function analisa(Texto){
     //dispara o contador de tempo
     t0 = performance.now();
     Gerenciador(Texto);
@@ -89,7 +89,7 @@ function Gerenciador (contentInicial){
     document.getElementById("demo7").innerHTML = "onlyUnique: "  + '<br>' + content3;
 
     var contentFinal2 = percorreLista(contentInicial, content3);
-    document.getElementById("demo10").innerHTML = ""; 
+    //document.getElementById("demo10").innerHTML = ""; 
     document.getElementById("demo10").innerHTML = "percorreLista: " + contentFinal2; 
     
     //Finaliza a contagem de tempo
@@ -171,8 +171,11 @@ function percorreLista (str,stringsearch){
         '<th>' + "Porcentagem" + '</th>' +
     '</tr>';
 
+    var tam;
+    if(stringsearch.length < 101){ tam = stringsearch.length} else { tam =101}
+
     //monta estrutura da tabela
-    for(var i = 1; i < 101; i++) {
+    for(var i = 1; i < tam; i++) {
         text+= '<tr>' + '<td>' + i + '</td>' + '<td>' + activities[i][0] + '</td>'+ '<td>' + activities[i][1] + '</td>' + '<td>' + activities[i][2].toFixed(5).slice(0,-1) + " %" + '</td>' + '</tr>';
     }
 
