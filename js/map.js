@@ -114,6 +114,7 @@ var coordenadas = [
 // var selected = false;
 var svg = document.getElementById('svg-map');
 console.log(svg.getAttribute("viewBox"));
+var selecionado = "";
 
 (function() {
   
@@ -125,9 +126,15 @@ console.log(svg.getAttribute("viewBox"));
       
       var str = this.getAttribute('xlink:href');
       var res = str.slice(1);
-      console.log(res);
-      //var viewBox = "185 370 95 95"
-      svg.setAttribute("viewBox", lerArrayObj(res));
+      if(selecionado != res){
+        selecionado = res;
+        console.log(res);
+        //var viewBox = "185 370 95 95"
+        svg.setAttribute("viewBox", lerArrayObj(res));
+      } else {
+        reset();
+        selecionado = "";
+      }
     }
   }
   
