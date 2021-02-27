@@ -1,84 +1,231 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Meu teste Roger
-        </title>
-        <link rel="stylesheet" href="./css/style.css"/>
-    </head>
-    <body>
-        <div class="container">
-            <header>
-            <div class="cont">
-                    <div class="div1">
-                        <nav>
-                            <ul>
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                                <li><a href="./about.html">About</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="div2">
-                        <h2><img src="img/shil.webp" class="headImage" /></h2>
-                    </div>
-                    <div class="div3">
-                        <h1>Teste HTML</h1>
-                    </div>
+<html lang="en">
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/site.webmanifest">
+  <title>Roger Bif Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Roger Bif UX Design Portfólio">
+  <meta name="keywords" content="EX, Design, User, experience">
+  <meta name="author" content="Roger Bif">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <img src="assets/img/logoRB.png" alt="Roger Bif">
+    <p>Roger Bif</p>
+  </a>
+  <p class="device-notification--message">This site has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">
+          <a class="header--logo" href="#0">
+            <img src="assets/img/logoRB.png" alt="Roger Bif logo" height="48">
+            <p>Roger Bif</p>
+          </a>
+          <button class="header--cta cta">Hire me</button>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Home</span></li>
+            <li><span>Works</span></li>
+            <li><span>About</span></li>
+            <li><span>Contact</span></li>
+            <li><span>Hire me</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Hi,<br>I'm Roger Bif<br>be welcome!</h1>
+                <button class="cta">Hire me
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button>
+                <img src="assets/img/RogerBifHeadBW.png" alt="Welcome" height="463">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>Educational background</h3>
+                  <p>I am graduated in Systems Analysis and Development 
+                    and a Postgraduate degree in UX Design by Laureate International Universities in Brazil. 
+                    I am passionate about creating usable and visually captivating digital products.</p>
+                </a>
+                <!-- <a href="#0">
+                  <h3>Fantasy interactive</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a> -->
+                <!-- <a href="#0">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a> -->
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/wip.jpg" alt="WIP">
+                      </div>
+                      <p class="slider--item-title">WIP</p>
+                      <p class="slider--item-description">Coming soon</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/wip.jpg" alt="WIP">
+                      </div>
+                      <p class="slider--item-title">WIP</p>
+                      <p class="slider--item-description">Coming soon</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/wip.jpg" alt="WIP">
+                      </div>
+                      <p class="slider--item-title">WIP</p>
+                      <p class="slider--item-description">Coming soon</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
                 </div>
-            </header>
-            <section id="main">
-                <p>Este é um site de exemplo aprendendo HTML5 CSS e Javascript</p>
-                <form >
-                    <div class="center">
-                        <!-- Rounded switch -->
-                        <label class="switch">
-                            <input type="checkbox" id="Checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                <br>
-                <div class="block">
-                    <div class="one">
-                        <div id="AnalisaTexto">
-                            <label for="Texto">Digite o texto para analise: </label><br>
-                            <!--<input name="Texto" type="textarea" id="Texto"/>-->
-                            ​<textarea id="Texto" rows="10" cols="60"></textarea><br>
-                            <input type="button" class="button buttonBlue" value="Analisar" onclick="analisa(Texto.value)">
-                        </div>   
-                    </div>
-                    <div class="two">
-                        <div id="ProcuraArquivo" style="visibility: hidden">
-                            <label for="fileInput" class="button buttonBlue">Localizar Arquivo para analise: </label><br>
-                            <input type="file" id="fileInput" style="visibility: hidden"><br>
-                        </div>                     
-                    </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
                 </div>
-                </form>
-                <br>
-                <div id="fileDisplayArea" class="bordered-image">
-                    É aqui que os resultados ganham vida...
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="about">
+              <div class="about--banner">
+                <h2><br>I believe in<br>the best<br>experience</h2>
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                <img src="assets/img/RogerBif.png" alt="About Us">
+              </div>
+              <div class="about--options">
+                <a href="#0">
+                  <h3>Articles</h3>
+                </a>
+                <a href="#0">
+                  <h3>Heuristics</h3>
+                </a>
+                <a href="#0">
+                  <h3>Cases of Study</h3>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="contact">
+              <div class="contact--lockup">
+                <div class="modal">
+                  <div class="modal--information">
+                    <p>Igrejinha - RS, Brazil</p>
+                    <a href="mailto:rogerbif@gmail.com">rogerbif@gmail.com</a>
+                    <a href="tel:+148126287560">+55 (51) 98122 3721</a>
+                  </div>
+                  <ul class="modal--options">
+                    <li><a href="https://www.behance.net/rogerbif">Bēhance</a></li>
+                    <li><a href="https://dribbble.com/rogerbif">dribbble</a></li>
+                    <li><a href="mailto:rogerbif@gmail.com">Contact me</a></li>
+                  </ul>
                 </div>
-                <p id="demo0"></p>
-                <p id="demo1"></p>
-                <p id="demo2"></p>
-                <p id="demo3"></p>
-                <p id="demo4"></p>
-                <p id="demo5"></p>
-                <p id="demo6"></p>
-                <p id="demo7"></p>
-                <p id="demo8"></p>
-                <p id="demo9"></p>
-                <p id="demo10"></p>
-                <p id="demo11"></p>
-                <div class="center">
-                        <a class="button buttonBlue" href="./index.html">Limpar</a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="hire">
+              <h2>You want me to do</h2>
+              <!-- checkout formspree.io for easy form setup -->
+              <form class="work-request"
+              form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSclceICHtYkg7ibwy87-QYWTPIDHb2SSxlab1LxDPQ4s2R_vQ/formResponse" target="_blank" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false" name="entry.458576650" required>
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false" name="entry.486911836" required>
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="information-name">
+                    <input id="message" type="text" spellcheck="false" name="entry.1218010316" required>
+                    <label for="message">Message</label>
+                  </div>
                 </div>
-            </section>
-            <footer>
-                &copy; 2019 Roger Bif
-            </footer>
-            <script type="text/javascript" src="js/index.js" ></script>
-        </div>
-    </body>
+                <input type="submit" value="Send Request">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Home</li>
+    <li>Works</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Hire me</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+<script>
+  function ClearFields() {
+    if(document.getElementById("mG61Hd").submit) {
+      document.getElementById("mG61Hd").reset;
+    }
+  }
+</script>
+</body>
 </html>
