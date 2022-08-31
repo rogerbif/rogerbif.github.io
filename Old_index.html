@@ -13,6 +13,10 @@
   <meta name="keywords" content="EX, Design, User, experience">
   <meta name="author" content="Roger Bif">
   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Color Pallette & Styles -->
+  <link href="css/vitality-turquoise.css" rel="stylesheet" type="text/css">
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <!-- Hotjar Tracking Code for https://rogerbif.github.io/ -->
   <script>
       (function(h,o,t,j,a,r){
@@ -50,7 +54,7 @@
             <span></span>
           </div>
         </header>
-
+        
         <nav class="l-side-nav">
           <ul class="side-nav">
             <li class="is-active"><span>Home</span></li>
@@ -93,54 +97,56 @@
           <li class="l-section section">
             <div class="work">
               <h2>Selected work</h2>
-              
-              <!-- Portfolio Grid Section -->
-              
-                <!-- heading text -->
-                <ul class="image-gallery">
-                  <!-- Item 1 -->
-                  <li>
-                    <a href="https://www.behance.net/gallery/119662607/NEXTfleet-Plataforma-gestao-de-frotas-Redesign/modules/681176643" target="_blank">
-                      <img src="assets/img/NextFleet_redesign.png" alt="NextFleet" />
-                      <div class="overlay">
-                        <Div>
-                          <h2>NextFleet</h2>
-                          <p>Plataforma de gestão de frotas</p>
-                        </Div>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="https://www.behance.net/gallery/116828409/SmilesGO-Hackathon-Smiles-Proposta-de-App-Gamficado">
+                      <div class="slider--item-image">
+                        <img src="assets/img/smilesGo.png" alt="SmilesGO">
                       </div>
-                      </a>
-                  </li>
-
-                  <!-- Item 2 -->
-                  <li>
-                    <a href="https://www.behance.net/gallery/116828409/SmilesGO-Hackathon-Smiles-Proposta-de-App-Gamficado" target="_blank">
-                    <img src="assets/img/smilesGo.png" alt="SmilesGO" />
-                    <div class="overlay">
-                      <Div>
-                        <h2>SmilesGO</h2>
-                        <p>App Gamificado para ganhar milhas</p>
-                      </Div>
-
-                    </div>
+                      <p class="slider--item-title">SmilesGO</p>
+                      <p class="slider--item-description">App Gamificado<br>para ganhar milhas</p>
                     </a>
                   </li>
-
-                  <!-- Item 3 -->
-                  <li>
-                    <a href="https://www.behance.net/gallery/118705125/Do-Zero-a-PI-INPI-Hack-plataforma-gamificada" target="_blank">
-                      <img src="assets/img/1_Home.png" alt="Do Zero à PI" />
-                      <div class="overlay">
-                        <Div>
-                          <h2>Do Zero à PI</h2>
-                          <p>Aprenda sobre Propriedade Intelectual em uma plataforma lúdica</p>
-                        </Div>
+                  <li class="slider--item slider--item-center">
+                    <a href="https://www.behance.net/gallery/118705125/Do-Zero-a-PI-INPI-Hack-plataforma-gamificada">
+                      <div class="slider--item-image">
+                        <img src="assets/img/1_Home.png" alt="DoZeroaPI">
                       </div>
-                      </a>
-                  </li>              
-           
+                      <p class="slider--item-title">Do Zero à PI</p>
+                      <p class="slider--item-description">Aprenda sobre PI<br>em uma plataforma lúdica</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/wip.jpg" alt="WIP">
+                      </div>
+                      <p class="slider--item-title">WIP</p>
+                      <p class="slider--item-description">Coming soon</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
             </div>
           </li>
-          
           <li class="l-section section">
             <div class="about">
               <div class="about--banner">
@@ -157,15 +163,15 @@
                 <img src="assets/img/RogerBif.png" alt="About Us">
               </div>
               <div class="about--options">
-                <a href="https://thedevconf.com/tdc/2022/innovation/trilha-ux-design">
-                  <h3>Speaker in TDC22</h3>
+                <a href="#0">
+                  <h3>Articles</h3>
                 </a>
-                <a href="https://www.youtube.com/c/rogerbif">
-                  <h3>YouTube Channel</h3>
+                <a href="#0">
+                  <h3>Heuristics</h3>
                 </a>
-                <!-- <a href="#0">
+                <a href="#0">
                   <h3>Cases of Study</h3>
-                </a> -->
+                </a>
               </div>
             </div>
           </li>
@@ -174,9 +180,9 @@
               <div class="contact--lockup">
                 <div class="modal">
                   <div class="modal--information">
-                    <p>São José - SC, Brazil</p>
+                    <p>Igrejinha - RS, Brazil</p>
                     <a href="mailto:rogerbif@gmail.com">rogerbif@gmail.com</a>
-                    <a href="https://wa.me/5551981223721">+55 (51) 98122 3721</a>
+                    <a href="tel:+148126287560">+55 (51) 98122 3721</a>
                   </div>
                   <ul class="modal--options">
                     <li><a href="https://www.behance.net/rogerbif">Bēhance</a></li>
@@ -189,7 +195,7 @@
           </li>
           <li class="l-section section">
             <div class="hire">
-              <h2>How could it help</h2>
+              <h2>You want me to do</h2>
               <!-- checkout formspree.io for easy form setup -->
               <form class="work-request"
               form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSclceICHtYkg7ibwy87-QYWTPIDHb2SSxlab1LxDPQ4s2R_vQ/formResponse" target="_blank" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="3" data-is-first-page="true">
